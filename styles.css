@@ -2,3 +2,73 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header, .footer {
+    background-color: #1F2937;
+}
+
+.header {
+    padding: 16px 15%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.header .top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .top-row .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .top-row .links {
+    display: flex;
+    gap: 30px;    
+}
+
+.header .hero {
+    margin: 100px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.header .hero .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.header .hero .signup .maintitle {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.header .hero .signup-img {
+    flex: 0, 1, auto;
+}
+
+.header .hero button {
+    padding: 8px 25px;
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: #3882f6;
+    color: white;
+    border-style: none;
+}
