@@ -20,11 +20,21 @@ a {
     background-color: #1F2937;
 }
 
+.content,
 .header {
     padding: 16px 15%;
+}
+
+.content,
+.header,
+.content .info {    
     display: flex;
-    color: white;
     flex-direction: column;
+}
+
+.header,
+.footer {
+    color: white;
 }
 
 .header .top-row {
@@ -60,15 +70,114 @@ a {
     font-weight: bolder;
 }
 
-.header .hero .signup-img {
-    flex: 0, 1, auto;
+.header .hero .signup .subtext {
+    font-size: 18px;
+    color: #e5e7eb
 }
 
-.header .hero button {
+.header .hero button,
+.content .call-to-action .container button {
     padding: 8px 25px;
-    border-radius: 10%;
+    border-radius: 7px;
     font-weight: bold;
     background-color: #3882f6;
     color: white;
     border-style: none;
+}
+
+.content {
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.content .info {
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.content .info .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.content .info .node-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content .info .node-container .node {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    width: 150px;
+}
+
+.content .info .node-container .node .im {
+    background-color: white;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 10%;
+    flex: 1 0 auto;
+}
+
+.content .info .node-container .node .subtext {
+    flex: 0;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.content .quote-container {
+    background-color: #E5E7EB;
+    padding: 7% 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .quote-container .quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.content .quote-container .attribute {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.content .call-to-action {
+    margin: auto;
+    padding: 50px;
+    color: white;
+}
+
+.content .call-to-action .container {
+    background-color: #5295ec;
+    border-radius: 7px;
+    padding: 35px 125px;
+    display: flex;
+    gap: 35px;
+}
+
+.content .call-to-action .container .motivation-text .title {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.content .call-to-action .container .motivation-text .subtext {
+    font-size: 10px;
+}
+
+.content .call-to-action .container button {
+    border-style: solid;
+    border-color: white;
+
+}
+
+.footer {
+    text-align: center;
+    padding: 36px 0;
 }
