@@ -1,1 +1,1 @@
-This is an implementation of the odin-landing-page
+This is a repo containing all projects, assignments, and notes I have worked on for The Odin Project
