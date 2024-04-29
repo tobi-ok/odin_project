@@ -43,14 +43,6 @@ function playRound(computerSelection, playerSelection){
 }
 
 function playGame(playerChoice){
-    /*const rounds = [
-        console.log(playRound(getComputerChoice(), prompt('Enter move ("rock", "paper", "scissors")'))),
-        console.log(playRound(getComputerChoice(), prompt('Enter move ("rock", "paper", "scissors")'))),
-        console.log(playRound(getComputerChoice(), prompt('Enter move ("rock", "paper", "scissors")'))),
-        console.log(playRound(getComputerChoice(), prompt('Enter move ("rock", "paper", "scissors")'))),
-        console.log(playRound(getComputerChoice(), prompt('Enter move ("rock", "paper", "scissors")')))
-    ]*/
-
     roundsPlayed++
     const computerChoice = getComputerChoice();
 
