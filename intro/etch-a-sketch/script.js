@@ -13,11 +13,15 @@ for (let y = 0; y < GRID_SIZE; y++){
     rowContainer.style.height = "45px";
     rowContainer.style.display = "flex";
     
-    for (let x = 0; x < GRID_SIZE; x++) {
+    for (let x = 0; x < GRID_SIZE*2; x++) {
         const newDiv = document.createElement('div');
         newDiv.style.flex = "1"
         //newDiv.style.width = `${parseInt(rowContainer.style.width)/GRID_SIZE}px`;
         newDiv.style.backgroundColor = "Pink";
+
+        newDiv.addEventListener("mouseover", () => {
+            newDiv.style.backgroundColor = "black"          
+        })
 
         rowContainer.appendChild(newDiv)
     }
